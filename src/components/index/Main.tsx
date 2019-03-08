@@ -33,7 +33,7 @@ export default function Main(): JSX.Element {
         <h1 style={style.title}>maechabin</h1>
 
         <p style={style.paragraph}>
-          Welcom! I'm a web front end engineer.
+          Welcome! I'm a web front end engineer.
           <br />I like TypeScript, React, and Angular...
         </p>
 
