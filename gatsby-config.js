@@ -13,5 +13,11 @@ module.exports = {
         fonts: ['material icons', 'roboto:300,400,500,700'],
       },
     },
+    {
+      resolve: `gatsby-plugin-emotion`,
+      options: {
+        // Accepts all options defined by `babel-plugin-emotion` plugin.
+      },
+    },
   ],
 };
