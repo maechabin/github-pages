@@ -8,7 +8,7 @@
     "add-domain": "echo \"www.maechabin.com\" > public/CNAME",
     "build": "rm -rf public && rm -rf .cache && gatsby build",
     "now-build": "gatsby build",
-    "deploy": "gatsby build && yarn add-domain && gh-pages -d public -b master",
+    "deploy": "yarn build && yarn add-domain && gh-pages -d public -b master",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
