@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { css } from '@emotion/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Main(): JSX.Element {
@@ -23,9 +24,8 @@ export default function Main(): JSX.Element {
       color: '#fff',
     } as React.CSSProperties,
     icon: {
-      fontSize: '64px',
       margin: '0 40px',
-    } as React.CSSProperties,
+    },
   };
   return (
     <main>
@@ -38,14 +38,14 @@ export default function Main(): JSX.Element {
         </p>
 
         <div>
-          <a href="https://mae.chab.in" target="_blank" style={style.icon}>
-            <FontAwesomeIcon icon={['fab', 'wordpress']} color="#fff" />
+          <a href="https://mae.chab.in" target="_blank" css={css(style.icon)}>
+            <FontAwesomeIcon icon={['fab', 'wordpress']} color="#fff" size="4x" />
           </a>
-          <a href="https://github.com/maechabin" target="_blank" style={style.icon}>
-            <FontAwesomeIcon icon={['fab', 'github']} color="#fff" />
+          <a href="https://github.com/maechabin" target="_blank" css={css(style.icon)}>
+            <FontAwesomeIcon icon={['fab', 'github']} color="#fff" size="4x" />
           </a>
-          <a href="https://twitter.com/maechabin" target="_blank" style={style.icon}>
-            <FontAwesomeIcon icon={['fab', 'twitter']} color="#fff" />
+          <a href="https://twitter.com/maechabin" target="_blank" css={css(style.icon)}>
+            <FontAwesomeIcon icon={['fab', 'twitter']} color="#fff" size="4x" />
           </a>
         </div>
       </div>
